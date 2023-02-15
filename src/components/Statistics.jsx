@@ -1,8 +1,7 @@
 export const Statistics = ({ stats, title }) => {
   return (
     <section className="statistics">
-
-      <h2 className="title">{title}</h2>
+      {title !== undefined && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(item => (
           <li className="item" key={item.id}>
