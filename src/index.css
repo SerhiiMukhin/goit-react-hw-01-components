@@ -29,9 +29,10 @@ img {
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
+  list-style: none;
 }
 
 /* Убираем внешние отступы */
