@@ -1,0 +1,39 @@
+.table {
+  width: 900px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 1px solid #ededed;
+  border-radius: 4px;
+
+  box-shadow: 2px 2px 2px #d8e0ea;
+
+  border-spacing: 0;
+}
+
+.head {
+  background-color: #00bcd5;
+  height: 50px;
+}
+
+.headCell {
+    color: white;
+    text-transform: uppercase;
+    outline: 1px solid white;
+}
+
+.row {
+  height: 50px;
+}
+
+.row:nth-child(2n) {
+    background-color: #ecf1f4;
+}
+
+.cell {
+  text-align: center;
+  text-transform: capitalize;
+
+  outline: 1px solid #f9f9f9;
+}
