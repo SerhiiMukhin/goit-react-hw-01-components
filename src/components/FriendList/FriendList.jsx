@@ -6,7 +6,10 @@ export const FriendList = ({ friends }) => (
   <ul className={css.friendList}>
     {friends.map(friend => (
       <li className={css.item} key={friend.id}>
-        <span className={css.status}>{friend.isOnline}</span>
+        <span className={clsx(css.status, {
+          [css.isOnline]: friend.isOnline === true,
+          [css.isOffline]: friend.isOnline === false
+        })}>{friend.isOnline}</span>
         <img
           className={css.avatar}
           src={friend.avatar}
